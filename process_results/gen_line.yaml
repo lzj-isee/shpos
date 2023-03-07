@@ -1,0 +1,283 @@
+# some common settings
+label:
+  SVGD: SVGD-MINI
+  SPOS: SPOS-MINI
+  SVRGPOS: SVRG-SPOS
+  HMCSPOS: SHPOS-MINI
+  STORMSPOS: SHPOS-VR
+  WNes: SVGD-WNes-MINI
+  ParaHMC: UL-MCMC-MINI
+  ParaStormHMC: UL-MCMC-VR
+order:
+  - SVGD
+  - SPOS
+  - SVRGPOS
+  - WNes
+  - ParaHMC
+  - ParaStormHMC
+  - HMCSPOS
+  - STORMSPOS
+color:
+  SVGD: blue
+  SPOS: darkorange
+  SVRGPOS: black
+  WNes: forestgreen
+  HMCSPOS: darkviolet
+  ParaHMC: teal
+  STORMSPOS: red
+  ParaStormHMC: peru
+linestyle:
+  SVGD: '--'
+  SPOS: '--'
+  SVRGPOS: '-.'
+  WNes: '-.'
+  HMCSPOS: '-'
+  ParaHMC: '--'
+  STORMSPOS: '-'
+  ParaStormHMC: '--'
+# settings for each dataset
+# IJCNN
+results_20/results_ijcnn:
+  sparse: 0.1
+  output:
+    test_nll: IJCNN_NLL
+    test_error: IJCNN_ERR
+  x_label: Number of data passes
+  x_max: 16
+  x_ratio: 0.8
+  use_tick: true
+  y_scale:
+    test_nll: linear
+    test_error: linear
+  y_label: 
+    test_nll: Test Negative log likelihood
+    test_error: Test Error
+  y_min:
+    test_nll: 0.2
+    test_error: 0.078
+  y_max: 
+    test_nll: 0.24
+    test_error: 0.092
+# a3a
+results_20/results_a3a:
+  sparse: 0.3
+  output:
+    test_nll: A3A_NLL
+    test_error: A3A_ERR
+  x_label: Number of data passes
+  x_max: 30
+  x_ratio: 0.75
+  use_tick: true
+  y_scale:
+    test_nll: linear
+    test_error: linear
+  y_label: 
+    test_nll: Test Negative log likelihood
+    test_error: Test Error
+  y_min:
+    test_nll: 0.330
+    test_error: 0.15
+  y_max: 
+    test_nll: 0.370
+    test_error: 0.2
+# covtype
+results_20/results_covtype:
+  sparse: 0.3
+  output:
+    test_nll: COVTYPE_NLL
+    test_error: COVTYPE_ERR
+  x_label: Number of data passes
+  x_max: 10
+  x_ratio: 1
+  use_tick: true
+  y_scale:
+    test_nll: linear
+    test_error: linear
+  y_label: 
+    test_nll: Test Negative log likelihood
+    test_error: Test Error
+  y_min:
+    test_nll: 0.514
+    test_error: 0.240
+  y_max: 
+    test_nll: 0.524
+    test_error: 0.265
+# a8a
+results_20/results_a8a:
+  sparse: 0.3
+  output:
+    test_nll: A8A_NLL
+    test_error: A8A_ERR
+  x_label: Number of data passes
+  x_max: 6
+  x_ratio: 0.6
+  use_tick: true
+  y_scale:
+    test_nll: linear
+    test_error: linear
+  y_label: 
+    test_nll: Test Negative log likelihood
+    test_error: Test Error
+  y_min:
+    test_nll: 0.31
+    test_error: 0.14
+  y_max: 
+    test_nll: 0.34
+    test_error: 0.20
+# w8a
+results_20/results_w8a:
+  sparse: 0.1
+  output:
+    test_nll: W8A_NLL
+    test_error: W8A_ERR
+  x_label: Number of data passes
+  x_max: 16
+  x_ratio: 0.8
+  use_tick: true
+  y_scale:
+    test_nll: linear
+    test_error: linear
+  y_label: 
+    test_nll: Test Negative log likelihood
+    test_error: Test Error
+  y_min:
+    test_nll: 0.047
+    test_error: 0.013
+  y_max: 
+    test_nll: 0.065
+    test_error: 0.025
+# abalone
+results_20/results_abalone:
+  sparse: 0.1
+  output:
+    test_rmse: ABALONE
+  x_label: Number of data passes
+  x_max: 40
+  x_ratio: 1
+  use_tick: true
+  y_scale:
+    test_rmse: linear
+  y_label: 
+    test_rmse: Test RMSE
+  y_min:
+    test_rmse: 2.18
+  y_max: 
+    test_rmse: 2.4
+# cadata
+results_20/results_cadata:
+  sparse: 0.3
+  output:
+    test_rmse: CADATA
+  x_label: Number of data passes
+  x_max: 30
+  x_ratio: 1
+  use_tick: true
+  y_scale:
+    test_rmse: linear
+  y_label: 
+    test_rmse: Test RMSE
+  y_min:
+    test_rmse: 57000
+  y_max: 
+    test_rmse: 83000
+# energy
+results_20/results_energy:
+  sparse: 0.1
+  output:
+    test_rmse: A_ENERGY
+  x_label: Number of data passes
+  x_max: 64
+  x_ratio: 1
+  use_tick: true
+  y_scale:
+    test_rmse: linear
+  y_label: 
+    test_rmse: Test RMSE
+  y_min:
+    test_rmse: 87
+  y_max: 
+    test_rmse: 100
+# space
+results_20/results_space:
+  sparse: 0.1
+  output:
+    test_rmse: SPACE
+  x_label: Number of data passes
+  x_max: 40
+  x_ratio: 0.8
+  use_tick: true
+  y_scale:
+    test_rmse: linear
+  y_label: 
+    test_rmse: Test RMSE
+  y_min:
+    test_rmse: 0.10
+  y_max: 
+    test_rmse: 0.14
+# superconduct
+results_20/results_superconduct:
+  sparse: 0.3
+  output:
+    test_rmse: SUPERCONDUCT
+  x_label: Number of data passes
+  x_max: 30
+  x_ratio: 1
+  use_tick: true
+  y_scale:
+    test_rmse: linear
+  y_label: 
+    test_rmse: Test RMSE
+  y_min:
+    test_rmse: 14
+  y_max: 
+    test_rmse: 17
+# WineWhite
+results_20/results_WineWhite:
+  sparse: 0.1
+  output:
+    test_rmse: WINEWHITE
+  x_label: Number of data passes
+  x_max: 40
+  x_ratio: 1
+  use_tick: true
+  y_scale:
+    test_rmse: linear
+  y_label: 
+    test_rmse: Test RMSE
+  y_min:
+    test_rmse: 0.72
+  y_max: 
+    test_rmse: 0.84
+# toy_dataset1
+results_20/results_toy1:
+  sparse: 1
+  output:
+    W2: TOY1
+  x_label: Iteration
+  x_max: 400
+  x_ratio: 1
+  use_tick: true
+  y_scale:
+    W2: log
+  y_label: 
+    W2: 2-Wasserstein distance
+  y_min:
+    W2: 0.18
+  y_max: 
+    W2: 4
+# toy_dataset3
+results_20/results_toydataset_3:
+  output:
+    W2: TOY3
+  x_label: Iteration
+  x_max: 400
+  x_num: 41
+  use_tick: true
+  y_scale:
+    W2: log
+  y_label: 
+    W2: 2-Wasserstein distance
+  y_min:
+    W2: 7
+  y_max: 
+    W2: 60
